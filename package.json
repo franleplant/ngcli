@@ -1,0 +1,17 @@
+{
+  "name": "ngcli",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "franleplant@gmail.com",
+  "license": "MIT",
+  "bin": {
+    "ngcli": "bin/ngcli.js"
+  },
+  "dependencies": {
+    "lodash": "^2.4.1"
+  }
+}
