@@ -1,11 +1,14 @@
-console.log(__dirname);
-
 var fs = require('fs');
-var _ = require('lodash');
+var swig = require('swig');
+
+module.exports = function(locals, path) {
+    swig.renderFile(__dirname + '/templates/factory.service.js', locals, function(err, output) {
+        if (err) {
+            throw err;
+        }
 
 
-var t = fs.readFileSync(__dirname + '/templates/factory.service.js', {enconding: 'utf-8'});
+        fs.writeFileSync(path, output)
 
-
-
-module.exports = _.template(t)
+    });
+}

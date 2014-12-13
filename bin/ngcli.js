@@ -4,11 +4,15 @@
 var fs = require('fs');
 var argv = require('argv');
 
-argv.option({
-    name: 'path',
-    short: 'p',
-        type: 'path'
+argv.mod({
+    mod: 'factory',
+    description: 'Create an Angular factory',
+    options: [{
+        name: 'path',
+        short: 'p',
+            type: 'path'
 
+    }]
 });
 
 
@@ -16,15 +20,9 @@ var args = argv.run();
 
 
 console.log(args);
-var a = {'moduleName': 'fucker', 'factoryName':args.targets[0] }
 
+if (args.mod === 'factory') {
 
-var tpl = require('../index.js');
-
-
-var c = tpl(a);
-
-var log = fs.writeFileSync(args.options.path, c)
-
-
-console.log(log);
+    var tpl = require('../index.js');
+    tpl({'moduleName': 'fucker', 'factoryName':args.targets[0] }, args.options.path)
+}
