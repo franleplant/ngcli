@@ -1,5 +1,6 @@
-(function() {
+{% extends 'iife.js' %}
 
+{% block body %}
 
     angular.module('{{ moduleName  }}', [])
         .factory('{{ factoryName  }}', factory);
@@ -12,4 +13,4 @@
 
     }
 
-})();
+{% endblock %}
