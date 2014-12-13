@@ -1,0 +1,8 @@
+{
+    "factory": {
+        "suffix": ".service.js",
+        "testSuffix": ".service.spec.js",
+        "template": "factory.service.js",
+        "testTemplate": "factory.service.spec.js"
+    }
+}
