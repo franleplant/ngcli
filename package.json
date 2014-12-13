@@ -12,6 +12,7 @@
     "ngcli": "bin/ngcli.js"
   },
   "dependencies": {
+    "argv": "0.0.2",
     "lodash": "^2.4.1"
   }
 }
