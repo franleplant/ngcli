@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node_modules/tape/bin/tape test/index.js"
   },
   "author": "franleplant@gmail.com",
   "license": "MIT",
@@ -15,5 +15,9 @@
     "argv": "0.0.2",
     "lodash": "^2.4.1",
     "swig": "^1.4.2"
+  },
+  "devDependencies": {
+    "del": "^1.1.0",
+    "tape": "^3.0.3"
   }
 }
