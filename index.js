@@ -30,6 +30,9 @@ function main(type, locals, pathTo) {
         return;
     }
 
+
+    pathTo = pathTo || './';
+
     fs.writeFileSync(
             path.join(pathTo, locals.factoryName + config.suffix),
             swig.renderFile(path.resolve(TEMPLATE_DIR, config.template), locals)
