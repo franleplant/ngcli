@@ -2,6 +2,4 @@
     'use strict';
 
     {% block body %}{% endblock %}
-
-
 })();

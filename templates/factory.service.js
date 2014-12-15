@@ -1,16 +1,14 @@
 {% extends 'iife.js' %}
 
 {% block body %}
-
     angular.module('{{ moduleName  }}', [])
-        .factory('{{ factoryName  }}', factory);
+        .factory('{{ factoryName  }}', {{ factoryName }}Factory);
 
 
     factory.$inject = [];
 
-    function factory() {
+    function {{ factoryName }}Factory() {
 
 
     }
-
 {% endblock %}
