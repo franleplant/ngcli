@@ -38,6 +38,7 @@ usable version. Help is welcome.
 - [ ] Support for other component?
 - [ ] Add support for `--dependencies` and `--di` cli options
 - [ ] Publish in npm
+- [ ] Add autocompletion
 - [ ] Improve docs
 
 
