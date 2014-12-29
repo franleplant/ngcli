@@ -12,7 +12,7 @@
   "author": "franleplant@gmail.com",
   "license": "MIT",
   "bin": {
-    "ngcli": "bin/ngcli.js"
+    "ngcli": "bin/ngcli"
   },
   "dependencies": {
     "complete": "^0.4.4",
