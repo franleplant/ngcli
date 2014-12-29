@@ -11,25 +11,29 @@ var nameParser = require('../src/nameParser.js');
 var main = require('../src/index.js');
 var package = require('../package.json');
 
+var component_type = argv._[0];
+var long_name = argv._[1];
+var pathTo = argv._[2];
+
 if (argv.version || argv.v) {
     console.log('ngcli version ', package.version);
     return;
 }
 
-if (argv.help || argv.h) {
+if (argv.help || argv.h || !component_type) {
     console.log(fs.readFileSync(__dirname + '/help.txt', {encoding: 'utf-8'}));
     return;
 }
 
-var component_type = argv._[0];
-var long_name = argv._[1];
-var pathTo = argv._[2];
+var parsedName
 
-console.log(argv)
-console.log(component_type, long_name, pathTo);
+try {
+    parsedName = nameParser(long_name);
+} catch(e) {
+    console.log('Please specify a name for your component');
+    return;
+}
 
-
-var parsedName = nameParser(long_name);
 
 main({
     type: component_type,
