@@ -9,6 +9,5 @@
 
     function {{ name }}Factory() {
 
-
     }
 {% endblock %}

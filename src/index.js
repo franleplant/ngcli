@@ -37,13 +37,13 @@ function main(opts) {
     var pathTo = opts.pathTo || './';
 
     fs.writeFileSync(
-            path.join(pathTo, opts.name + config.suffix),
+            path.join(pathTo, opts.name + config.suffix + '.js'),
             swig.renderFile(path.resolve(TEMPLATE_DIR, config.template), opts)
         );
 
 
     fs.writeFileSync(
-            path.join(pathTo, opts.name + config.testSuffix),
+            path.join(pathTo, opts.name + config.suffix + '.spec.js'),
             swig.renderFile(path.resolve(TEMPLATE_DIR, config.testTemplate), opts)
         );
 

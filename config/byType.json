@@ -1,14 +1,19 @@
 {
     "factory": {
-        "suffix": ".service.js",
-        "testSuffix": ".service.spec.js",
-        "template": "factory.service.js",
-        "testTemplate": "factory.service.spec.js"
+        "suffix": ".service",
+        "template": "factory.js",
+        "testTemplate": "factory.spec.js"
     },
     "service": {
         "suffix": ".service.js",
         "testSuffix": ".service.spec.js",
         "template": "service.service.js",
         "testTemplate": "service.service.spec.js"
+    },
+    "controller": {
+        "suffix": ".controller.js",
+        "testSuffix": ".controller.spec.js",
+        "template": "controller.js",
+        "testTemplate": "controller.spec.js"
     }
 }
