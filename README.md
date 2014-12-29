@@ -28,17 +28,18 @@ writing better Angular apps.
 ngcli is under development, there are a lot of things to do in order to achieve a first
 usable version. Help is welcome.
 
-- [] Add more tests
-- [] Support for filter component
-- [] Support for provider component
-- [] Support for directive component
-- [] Support for module component
-- [] Support for config component
-- [] Support for routes component
-- [] Support for other component?
-- [] Add support for `--dependencies` and `--di` cli options
-- [] Publish in npm
-- [] Improve docs
+- [ ] Add more tests
+- [ ] Support for filter component
+- [ ] Support for provider component
+- [ ] Support for directive component
+- [ ] Support for module component
+- [ ] Support for config component
+- [ ] Support for routes component
+- [ ] Support for other component?
+- [ ] Add support for `--dependencies` and `--di` cli options
+- [ ] Publish in npm
+- [ ] Add autocompletion
+- [ ] Improve docs
 
 
 
