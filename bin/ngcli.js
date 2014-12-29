@@ -29,7 +29,6 @@ console.log(argv)
 console.log(component_type, long_name, pathTo);
 
 
-
 var parsedName = nameParser(long_name);
 
 main({
