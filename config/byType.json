@@ -4,5 +4,11 @@
         "testSuffix": ".service.spec.js",
         "template": "factory.service.js",
         "testTemplate": "factory.service.spec.js"
+    },
+    "service": {
+        "suffix": ".service.js",
+        "testSuffix": ".service.spec.js",
+        "template": "service.service.js",
+        "testTemplate": "service.service.spec.js"
     }
 }
