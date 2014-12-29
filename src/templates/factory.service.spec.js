@@ -1,11 +1,11 @@
-describe('{{ moduleName}} module', function() {
+describe('{{ module}}.{{ name }} module', function() {
     'use strict';
 
 
-    var {{ factoryName }};
+    var {{ name }};
 
     // Include the main module
-    beforeEach(module('{{moduleName}}'));
+    beforeEach(module('{{module}}'));
 
 
     //Mock dependencies
@@ -21,12 +21,12 @@ describe('{{ moduleName}} module', function() {
     // Get a reference of the service to test
     beforeEach(inject(function($injector) {
 
-        {{ factoryName }} = $injector.get('{{ factoryName }}');
+        {{ name }} = $injector.get('{{ name }}');
     });
 
 
     it('should ....', function() {
-        var result = {{ factoryName }}();
+        var result = {{ name }}();
 
         expect(result).toBe(...);
         expect(result).toEqual(...);
@@ -36,7 +36,7 @@ describe('{{ moduleName}} module', function() {
     describe('alternative flows', function() {
 
         it('should ...', function() {
-            var result = {{ factoryName }}();
+            var result = {{ name }}();
 
             expect(result).toBe(...);
             expect(result).toEqual(...);

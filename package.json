@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node_modules/tape/bin/tape test/index.js",
+    "test": "tape src/*.test.js",
     "coverage": "istanbul cover test/**.js",
     "precoveralls": "npm run coverage",
     "coveralls": "cat ./coverage/lcov.info | coveralls"
@@ -16,7 +16,9 @@
   },
   "dependencies": {
     "argv": "0.0.2",
+    "complete": "^0.4.4",
     "lodash": "^2.4.1",
+    "minimist": "^1.1.0",
     "swig": "^1.4.2"
   },
   "devDependencies": {

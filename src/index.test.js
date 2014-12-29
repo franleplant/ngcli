@@ -1,18 +1,16 @@
-
 var fs = require('fs');
 var del = require('del');
 var test = require('tape');
-var main = require('../index.js');
+var main = require('./index.js');
 
 test('Factory: it should create boilerplate in the PWD when no path arg was specified', function(t) {
     t.plan(2);
 
-    var locals = {
-        factoryName: 'aFactory',
-        moduleName: 'aModule'
-    };
-
-    main('factory', locals);
+    main({
+        type: 'factory',
+        module: 'aModule',
+        name: 'aFactory'
+    });
 
 
     t.ok( fs.existsSync('./aFactory.service.js'), 'it should create a src file');
@@ -21,13 +19,11 @@ test('Factory: it should create boilerplate in the PWD when no path arg was spec
 
     del(['./aFactory*'], function(err, deletedFiles) {
         if (err) {
-
             console.log(err)
             return;
         }
 
         console.log('Cleaning test files: ', deletedFiles.join(', '));
-
     });
 
 });
@@ -36,12 +32,12 @@ test('Factory: it should create boilerplate in the PWD when no path arg was spec
 test('Factory: it should create boilerplate in the path specified on the args', function(t) {
     t.plan(2);
 
-    var locals = {
-        factoryName: 'aFactory',
-        moduleName: 'aModule'
-    };
-
-    main('factory', locals, '.');
+    main({
+        type: 'factory',
+        module: 'aModule',
+        name: 'aFactory',
+        pathTo: '.'
+    });
 
 
     t.ok( fs.existsSync('./aFactory.service.js'), 'it should create a src file');
@@ -50,13 +46,11 @@ test('Factory: it should create boilerplate in the path specified on the args', 
 
     del(['./aFactory*'], function(err, deletedFiles) {
         if (err) {
-
             console.log(err)
             return;
         }
 
         console.log('Cleaning test files: ', deletedFiles.join(', '));
-
     });
 
 });
