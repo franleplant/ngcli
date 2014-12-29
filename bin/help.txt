@@ -1,0 +1,26 @@
+ngcli - The missing Angular.js 1.x boilerplate helper
+
+Usage:
+    ngcli componentType name [destPath]
+
+    ngcli will create a componentType boilerplate alongside with its test files
+    in the form of:
+        - name.componentType.js
+        - name.componentType.spec.js
+
+Where
+
+    componentType: One of the angular components
+        factory, service, provider, controller, filter, module, directive
+
+    name: The component name. It can include module prefix
+        modA.modB.componentName
+        componentName
+
+    destPath: the destination path for the component, defaults to './'
+
+Options
+    -h --help: print this help
+    -v --version: print ngcli current version
+
+
