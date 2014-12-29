@@ -1,9 +1,7 @@
 #!/usr/bin/env node
-/*
 var complete = require('complete');
 complete.list = ['factory', 'service'];
 cofactorymplete.init();
-*/
 
 var fs = require('fs');
 var argv = require('minimist')(process.argv.slice(2));
