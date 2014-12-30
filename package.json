@@ -7,7 +7,8 @@
     "test": "tape src/*.test.js",
     "coverage": "istanbul cover src/*.test.js",
     "precoveralls": "npm run coverage",
-    "coveralls": "cat ./coverage/lcov.info | coveralls"
+    "coveralls": "cat ./coverage/lcov.info | coveralls",
+    "tabcompletion": "source tabcompletion/compl.zsh"
   },
   "author": "franleplant@gmail.com",
   "license": "MIT",
@@ -17,7 +18,8 @@
   "dependencies": {
     "complete": "^0.4.4",
     "minimist": "^1.1.0",
-    "swig": "^1.4.2"
+    "swig": "^1.4.2",
+    "tabtab": "0.0.2"
   },
   "devDependencies": {
     "coveralls": "^2.11.2",
