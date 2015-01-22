@@ -1,4 +1,4 @@
-describe('{{ module}}.{{ name }} module', function() {
+describe('{{module}}.{{name}} module', function() {
     'use strict';
 
 
@@ -22,7 +22,7 @@ describe('{{ module}}.{{ name }} module', function() {
     beforeEach(inject(function($injector) {
 
         {{ name }} = $injector.get('{{ name }}');
-    });
+    }));
 
 
     it('should ....', function() {
