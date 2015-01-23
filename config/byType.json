@@ -15,5 +15,11 @@
         "testSuffix": ".controller.spec.js",
         "template": "controller.js",
         "testTemplate": "controller.spec.js"
+    },
+    "directive": {
+        "suffix": ".directive.js",
+        "testSuffix": ".directive.spec.js",
+        "template": "directive.js",
+        "testTemplate": "directive.spec.js"
     }
 }

@@ -23,10 +23,10 @@ describe('{{ module}}.{{ name }} module', function() {
                             .and.returnValue(...);
 
         ctrl = $injector
-                .get('$controller')({{ name }}Controller, {
+                .get('$controller')('{{ name }}Controller', {
                     //Mock any Controller dependencies
                 });
-    });
+    }));
 
     it('should initialize correctly', function() {
          expect(ctrl.attr).toBe(...);
