@@ -11,6 +11,26 @@ ngcli
 
 ngcli follows [John Papa's](https://github.com/johnpapa/angularjs-styleguide) style guide.
 
+
+## Usage
+
+Checkout `bin/help.txt` for a complete doc, or just run in your terminal `ngcli --help`.
+
+Since the module is not ready, it is not published on npm yet, so in order to use it you need to:
+```sh
+git clone https://github.com/franleplant/ngcli
+cd ngcli
+# The following will link the script to your path
+npm link
+```
+
+Use it!:
+```sh
+ngcli directive myDirective path/to
+```
+
+
+
 ## Motivation
 
 Angular.js is great and there are a lot of nice patterns to follow in order to achieve
@@ -31,7 +51,7 @@ usable version. Help is welcome.
 - [ ] Add more tests
 - [ ] Support for filter component
 - [ ] Support for provider component
-- [ ] Support for directive component
+- [x] Support for directive component
 - [ ] Support for module component
 - [ ] Support for config component
 - [ ] Support for routes component
