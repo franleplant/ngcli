@@ -5,21 +5,23 @@
         "testTemplate": "factory.spec.js"
     },
     "service": {
-        "suffix": ".service.js",
-        "testSuffix": ".service.spec.js",
+        "suffix": ".service",
         "template": "service.service.js",
         "testTemplate": "service.service.spec.js"
     },
     "controller": {
-        "suffix": ".controller.js",
-        "testSuffix": ".controller.spec.js",
+        "suffix": ".controller",
         "template": "controller.js",
         "testTemplate": "controller.spec.js"
     },
     "directive": {
-        "suffix": ".directive.js",
-        "testSuffix": ".directive.spec.js",
+        "suffix": ".directive",
         "template": "directive.js",
         "testTemplate": "directive.spec.js"
+    },
+    "filter": {
+        "suffix": ".filter",
+        "template": "filter.js",
+        "testTemplate": "filter.spec.js"
     }
 }
