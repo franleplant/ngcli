@@ -49,7 +49,7 @@ ngcli is under development, there are a lot of things to do in order to achieve 
 usable version. Help is welcome.
 
 - [ ] Add more tests
-- [ ] Support for filter component
+- [x] Support for filter component
 - [ ] Support for provider component
 - [x] Support for directive component
 - [ ] Support for module component
